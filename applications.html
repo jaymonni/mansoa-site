@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Applications - Mansoa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 34px;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #d1d5db;
+      font-size: 17px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .top-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section-title {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #111827;
+    }
+
+    .intro-box {
+      background: white;
+      border-radius: 12px;
+      padding: 22px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .category {
+      margin-bottom: 35px;
+    }
+
+    .category h2 {
+      margin-bottom: 15px;
+      font-size: 24px;
+      color: #1f2937;
+    }
+
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .app-card {
+      background: white;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      border: 1px solid #e5e7eb;
+    }
+
+    .app-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 22px;
+      color: #111827;
+    }
+
+    .app-card p {
+      margin: 0 0 15px;
+      color: #4b5563;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 16px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 13px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Applications Mansoa</h1>
+    <p>Retrouvez toutes les applications en un seul endroit</p>
+  </header>
+
+  <div class="container">
+    <a class="top-link" href="index.html">← Retour à l’accueil</a>
+
+    <div class="intro-box">
+      <h2 class="section-title">Toutes les applications</h2>
+      <p>
+        Cette page regroupe les applications présentées sur Mansoa.
+        Elles sont classées pour rendre la navigation plus simple et plus agréable.
+      </p>
+      <p>
+        Chaque application dispose d’une page dédiée pour découvrir son concept,
+        ses fonctionnalités principales et son lien de téléchargement.
+      </p>
+    </div>
+
+    <div class="category">
+      <h2>Shopping / Recherche</h2>
+      <div class="apps-grid">
+        <div class="app-card">
+          <h3>Dealio</h3>
+          <p>Recherchez rapidement sur plusieurs sites en un seul endroit.</p>
+          <a class="button" href="dealio.html">Découvrir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Photo / Création</h2>
+      <div class="apps-grid">
+        <div class="app-card">
+          <h3>Avant / Après</h3>
+          <p>Comparez et mettez en valeur vos transformations en photos.</p>
+          <a class="button" href="avant-apres.html">Découvrir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Sport</h2>
+      <div class="apps-grid">
+        <div class="app-card">
+          <h3>Run & Trail</h3>
+          <p>Explorez, organisez et suivez vos courses plus facilement.</p>
+          <a class="button" href="run-trail.html">Découvrir</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Mansoa - Site personnel
+  </footer>
+
+</body>
+</html>
