@@ -16,29 +16,45 @@ body {
 
 /* HEADER */
 header {
-  background:#111;
-  color:white;
-  text-align:center;
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  background: #111;
 }
 
 .banner {
-  width:100%;
-  height:auto;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
 }
 
 .hero {
-  padding:30px 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 900px;
+  padding: 20px;
 }
 
 .hero h1 {
-  margin:0;
-  font-size:36px;
+  margin: 0;
+  font-size: 34px;
+  line-height: 1.2;
 }
 
 .hero p {
-  margin-top:10px;
-  font-size:18px;
-  color:#d1d5db;
+  margin-top: 12px;
+  font-size: 18px;
+  color: #f3f4f6;
 }
 
 /* CONTENU */
@@ -105,14 +121,13 @@ footer {
 <body>
 
 <header>
-
-  <!-- IMAGE (optionnelle) -->
-  <img src="banniere.jpg" class="banner">
+  <img src="banniere.jpg" class="banner" alt="Bannière Mansoa">
+  <div class="overlay"></div>
 
   <div class="hero">
-    <h1>Mes applications mobiles</h1>
+    <h1>Des applications simples, utiles et pensées pour le quotidien</h1>
+    <p>Découvrez mes projets mobiles et accédez à chaque application en un clic</p>
   </div>
-
 </header>
 
 <div class="container">
