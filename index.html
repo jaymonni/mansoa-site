@@ -53,17 +53,17 @@
       padding: 0 16px;
     }
 
-    .cta-button {
-      display: inline-block;
-      padding: 14px 26px;
-      background: linear-gradient(135deg, #2563eb, #4f46e5);
-      color: white;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 999px;
-      box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
-      transition: 0.2s ease;
-    }
+   .cta-button {
+  display: inline-block;
+  padding: 14px 26px;
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+}
 
     .cta-button:hover {
       background: linear-gradient(135deg, #1d4ed8, #4338ca);
@@ -234,15 +234,14 @@
 <body>
 
   <header>
-    <div class="banner-container">
-      <img src="banniere.jpg" alt="Bannière Mansoa" class="banner">
-      <div class="banner-overlay"></div>
+  <img src="banniere.jpg" class="banner">
 
-      <div class="banner-content">
-        <a class="cta-button" href="applications.html">🚀 Découvrir mes applications</a>
-      </div>
-    </div>
-  </header>
+  <div style="text-align:center; margin-top:15px;">
+    <a class="cta-button" href="applications.html">
+      🚀 Découvrir mes applications
+    </a>
+  </div>
+</header>
 
   <div class="hero">
     <h1>Créateur d'applications mobiles</h1>
