@@ -1,220 +1,231 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Applications - Mansoa</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Applications - Mansoa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f3f4f8;
-      color: #111827;
-      line-height: 1.6;
-    }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f8;
+  color: #111827;
+}
 
-    a {
-      text-decoration: none;
-    }
+.header {
+  background: linear-gradient(135deg, #172554, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 50px 20px 40px;
+}
 
-    header {
-      background: #111827;
-      color: white;
-      text-align: center;
-      padding: 46px 20px;
-    }
+.header h1 {
+  margin: 0;
+  font-size: 36px;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 38px;
-    }
+.header p {
+  margin: 12px auto 0;
+  max-width: 750px;
+  font-size: 18px;
+  color: #dbeafe;
+}
 
-    header p {
-      margin-top: 12px;
-      font-size: 18px;
-      color: #dbeafe;
-    }
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 30px 20px 50px;
-    }
+.top-link {
+  display: inline-block;
+  margin-bottom: 25px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    .top-link {
-      display: inline-block;
-      margin-bottom: 24px;
-      color: #2563eb;
-      font-weight: bold;
-    }
+.top-link:hover {
+  text-decoration: underline;
+}
 
-    .intro-box {
-      background: white;
-      border-radius: 16px;
-      padding: 28px;
-      margin-bottom: 28px;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
-    }
+.intro-card {
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
 
-    .intro-box h2 {
-      margin-top: 0;
-      font-size: 32px;
-      color: #172554;
-    }
+.intro-card h2 {
+  margin-top: 0;
+  color: #172554;
+}
 
-    .intro-box p {
-      margin-bottom: 14px;
-      color: #374151;
-      font-size: 17px;
-    }
+.category {
+  margin-bottom: 40px;
+}
 
-    .category {
-      margin-bottom: 30px;
-    }
+.category h2 {
+  margin-bottom: 18px;
+  color: #172554;
+}
 
-    .category h2 {
-      font-size: 28px;
-      color: #172554;
-      margin-bottom: 16px;
-    }
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
 
-    .apps-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
+.app-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-    .app-card {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
-    }
+.app-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
 
-    .app-card h3 {
-      margin-top: 0;
-      margin-bottom: 10px;
-      font-size: 24px;
-    }
+.app-icon {
+  width: 82px;
+  height: 82px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-bottom: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+}
 
-    .app-card p {
-      margin: 0 0 18px;
-      color: #4b5563;
-      font-size: 16px;
-      min-height: 72px;
-    }
+.app-card h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  color: #111827;
+}
 
-    .button {
-      display: inline-block;
-      padding: 11px 18px;
-      background: #2563eb;
-      color: white;
-      border-radius: 10px;
-      font-weight: bold;
-    }
+.app-card p {
+  margin: 0 0 18px;
+  color: #4b5563;
+  line-height: 1.5;
+  min-height: 66px;
+}
 
-    .button:hover {
-      background: #1d4ed8;
-    }
+.app-link {
+  display: inline-block;
+  padding: 11px 18px;
+  background: #2563eb;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    footer {
-      text-align: center;
-      padding: 30px 20px 40px;
-      font-size: 14px;
-      color: #4b5563;
-    }
+.app-link:hover {
+  background: #1d4ed8;
+}
 
-    .footer-links {
-      margin-top: 10px;
-    }
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  color: #4b5563;
+  font-size: 14px;
+}
 
-    .footer-links a {
-      color: #1d4ed8;
-      font-weight: bold;
-      margin: 0 8px;
-    }
-  </style>
+.footer a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .header p {
+    font-size: 16px;
+  }
+
+  .app-card p {
+    min-height: auto;
+  }
+}
+</style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Mes applications</h1>
-    <p>Retrouvez tous mes projets mobiles en un seul endroit</p>
-  </header>
+<div class="header">
+  <h1>Les applications Mansoa</h1>
+  <p>
+    Découvrez les applications que je développe : des projets mobiles simples,
+    utiles et pensés pour répondre à des besoins concrets.
+  </p>
+</div>
 
-  <div class="container">
-    <a class="top-link" href="index.html">← Retour à l’accueil</a>
+<div class="container">
 
-    <div class="intro-box">
-      <h2>Applications Mansoa</h2>
-      <p>
-        Cette page regroupe les applications que je développe et présente sur Mansoa.
-      </p>
-      <p>
-        À mesure que de nouveaux projets seront ajoutés, ils apparaîtront ici de façon claire et organisée.
-      </p>
-      <p>
-        Chaque application dispose de sa propre page pour présenter son objectif,
-        ses fonctionnalités principales et son lien de téléchargement.
-      </p>
-    </div>
+  <a class="top-link" href="index.html">← Retour à l’accueil</a>
 
-    <div class="category">
-      <h2>Shopping / Recherche</h2>
-      <div class="apps-grid">
-        <div class="app-card">
-          <h3>Dealio</h3>
-          <p>
-            Une application pour lancer rapidement une recherche sur plusieurs sites
-            et gagner du temps.
-          </p>
-          <a class="button" href="dealio.html">Découvrir</a>
-        </div>
+  <div class="intro-card">
+    <h2>Un espace pour retrouver tous les projets</h2>
+    <p>
+      Cette page regroupe les applications présentées sur Mansoa.
+      Chaque projet dispose d’une page dédiée pour mieux comprendre son concept,
+      ses fonctionnalités principales et accéder à son téléchargement.
+    </p>
+  </div>
+
+  <div class="category">
+    <h2>Applications disponibles</h2>
+
+    <div class="apps-grid">
+
+      <div class="app-card">
+        <img src="dealio.png" alt="Icône Dealio" class="app-icon">
+        <h3>Dealio</h3>
+        <p>Recherchez rapidement sur plusieurs sites depuis une seule application.</p>
+        <a class="app-link" href="dealio.html">Découvrir</a>
       </div>
-    </div>
 
-    <div class="category">
-      <h2>Photo / Création</h2>
-      <div class="apps-grid">
-        <div class="app-card">
-          <h3>Avant / Après</h3>
-          <p>
-            Une application pour comparer visuellement des transformations
-            et valoriser les résultats en images.
-          </p>
-          <a class="button" href="avant-apres.html">Découvrir</a>
-        </div>
+      <div class="app-card">
+        <img src="avantapres.png" alt="Icône Avant / Après" class="app-icon">
+        <h3>Avant / Après</h3>
+        <p>Comparez et mettez en valeur vos transformations en photos simplement.</p>
+        <a class="app-link" href="avant-apres.html">Découvrir</a>
       </div>
-    </div>
 
-    <div class="category">
-      <h2>Sport</h2>
-      <div class="apps-grid">
-        <div class="app-card">
-          <h3>Run & Trail</h3>
-          <p>
-            Une application pour explorer des courses, s’organiser
-            et suivre ses événements sportifs.
-          </p>
-          <a class="button" href="run-trail.html">Découvrir</a>
-        </div>
+      <div class="app-card">
+        <img src="runtrail.png" alt="Icône Run & Trail" class="app-icon">
+        <h3>Run & Trail</h3>
+        <p>Explorez, organisez et suivez vos courses et événements sportifs.</p>
+        <a class="app-link" href="run-trail.html">Découvrir</a>
       </div>
+
     </div>
   </div>
 
-  <footer>
-    <div>© 2026 Mansoa - Créateur d'applications mobiles. Tous droits réservés.</div>
-    <div class="footer-links">
-      <a href="index.html">Accueil</a>
-      <a href="mentions-legales.html">Mentions légales</a>
-    </div>
-  </footer>
+</div>
+
+<div class="footer">
+  <p>© 2026 Mansoa - Créateur d'applications mobiles</p>
+  <p>
+    <a href="mentions-legales.html">Mentions légales</a> |
+    <a href="confidentialite.html">Confidentialité</a>
+  </p>
+</div>
 
 </body>
 </html>
