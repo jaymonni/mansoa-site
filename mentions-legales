@@ -1,147 +1,30 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Mentions légales - Mansoa</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<h1>Mentions légales</h1>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<h2>Éditeur du site</h2>
+<p>
+Mansoa<br>
+Créateur indépendant<br>
+Responsable de publication : Mansoa<br>
+Email : <a href="mansoa.app@gmail.com">mansoa.app@gmail.com</a>
+</p>
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f3f4f8;
-      color: #111827;
-      line-height: 1.7;
-    }
+<h2>Hébergement</h2>
+<p>
+Site hébergé par GitHub Pages<br>
+GitHub Inc.<br>
+88 Colin P Kelly Jr St<br>
+San Francisco, CA 94107<br>
+États-Unis
+</p>
 
-    a {
-      text-decoration: none;
-    }
+<h2>Propriété intellectuelle</h2>
+<p>
+L’ensemble du contenu présent sur ce site (textes, images, logos) est protégé.<br>
+Toute reproduction ou utilisation sans autorisation est interdite.
+</p>
 
-    header {
-      background: #111827;
-      color: white;
-      text-align: center;
-      padding: 46px 20px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 38px;
-    }
-
-    header p {
-      margin-top: 12px;
-      font-size: 18px;
-      color: #dbeafe;
-    }
-
-    .container {
-      max-width: 980px;
-      margin: auto;
-      padding: 30px 20px 50px;
-    }
-
-    .top-link {
-      display: inline-block;
-      margin-bottom: 24px;
-      color: #2563eb;
-      font-weight: bold;
-    }
-
-    .box {
-      background: white;
-      border-radius: 16px;
-      padding: 28px;
-      margin-bottom: 24px;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
-    }
-
-    .box h2 {
-      margin-top: 0;
-      color: #172554;
-      font-size: 26px;
-    }
-
-    .box p {
-      margin-bottom: 14px;
-      color: #374151;
-      font-size: 16px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 20px 40px;
-      font-size: 14px;
-      color: #4b5563;
-    }
-
-    .footer-links {
-      margin-top: 10px;
-    }
-
-    .footer-links a {
-      color: #1d4ed8;
-      font-weight: bold;
-      margin: 0 8px;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Mentions légales</h1>
-    <p>Informations générales concernant le site Mansoa</p>
-  </header>
-
-  <div class="container">
-    <a class="top-link" href="index.html">← Retour à l’accueil</a>
-
-    <div class="box">
-      <h2>Éditeur du site</h2>
-      <p><strong>Mansoa</strong></p>
-      <p>Créateur indépendant d'applications mobiles.</p>
-      <p>Nom : à compléter</p>
-      <p>Email : à compléter</p>
-    </div>
-
-    <div class="box">
-      <h2>Hébergement</h2>
-      <p>Ce site est hébergé via GitHub Pages.</p>
-    </div>
-
-    <div class="box">
-      <h2>Propriété intellectuelle</h2>
-      <p>
-        Les contenus présents sur ce site, y compris les textes, visuels, logos,
-        éléments graphiques et présentations des applications, sont protégés.
-      </p>
-      <p>
-        Toute reproduction, diffusion ou utilisation sans autorisation préalable
-        est interdite.
-      </p>
-    </div>
-
-    <div class="box">
-      <h2>Responsabilité</h2>
-      <p>
-        Les informations publiées sur ce site sont fournies à titre informatif
-        et peuvent être modifiées à tout moment.
-      </p>
-    </div>
-  </div>
-
-  <footer>
-    <div>© 2026 Mansoa - Créateur d'applications mobiles. Tous droits réservés.</div>
-    <div class="footer-links">
-      <a href="index.html">Accueil</a>
-      <a href="applications.html">Applications</a>
-    </div>
-  </footer>
-
-</body>
-</html>
+<h2>Responsabilité</h2>
+<p>
+Les informations présentes sur ce site sont fournies à titre indicatif.
+Elles peuvent être modifiées à tout moment.
+</p>
