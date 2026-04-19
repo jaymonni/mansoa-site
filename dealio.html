@@ -16,22 +16,23 @@ body {
   background: #f3f4f8;
   color: #111827;
 }
+  .app-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
 
-.header {
-  background: white;
-  text-align: center;
-  padding: 42px 20px 30px;
-  border-bottom: 1px solid #e5e7eb;
+.app-header h3 {
+  margin: 0;
 }
 
 .app-icon {
-  width: 84px;
-  height: 84px;
-  border-radius: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
   object-fit: cover;
-  display: block;
-  margin: 0 auto 14px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
 }
 
 .header h1 {
@@ -129,11 +130,14 @@ footer a:hover {
 
 <body>
 
-<div class="header">
-  <img src="dealio.png" class="app-icon" alt="Icône Dealio">
-  <h1>Dealio</h1>
-  <p>
-    Une application pensée pour lancer rapidement une recherche sur plusieurs sites,
+<div class="app-card">
+
+  <div class="app-header">
+    <img src="dealio.png" class="app-icon">
+    <h3>Dealio</h3>
+  </div>
+  
+  <p>Une application pensée pour lancer rapidement une recherche sur plusieurs sites,
     simplement et efficacement.
   </p>
 </div>
