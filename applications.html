@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Mansoa - Créateur d'applications mobiles</title>
+<title>Applications - Mansoa</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -15,170 +15,96 @@ body {
   font-family: Arial, sans-serif;
   background: #f3f4f8;
   color: #111827;
-  line-height: 1.6;
 }
 
-/* BANNIERE */
-.banner-container {
-  position: relative;
-}
-
-.banner {
-  width: 100%;
-  max-height: 390px;
-  object-fit: cover;
-  display: block;
-}
-
-.banner-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, rgba(15,23,42,0.12), rgba(15,23,42,0.28));
-}
-
-/* CONTENU BANNIERE */
-.banner-content {
-  position: absolute;
-  bottom: -55px;
-  width: 100%;
+/* HEADER */
+.header {
+  background: #ffffff;
   text-align: center;
-  padding: 0 20px;
+  padding: 50px 20px 35px;
+  border-bottom: 1px solid #e5e7eb;
 }
 
-.banner-card {
-  display: inline-block;
-  background: rgba(255,255,255,0.96);
-  border-radius: 24px;
-  padding: 22px 22px 18px;
-  box-shadow: 0 14px 40px rgba(15,23,42,0.16);
-  max-width: 760px;
-  width: 100%;
-  backdrop-filter: blur(6px);
-}
-
-.mansoa-logo {
-  width: 72px;
-  height: 72px;
-  border-radius: 18px;
-  object-fit: cover;
-  margin-bottom: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-}
-
-.banner-card h1 {
+.header h1 {
   margin: 0;
-  font-size: 32px;
+  font-size: 34px;
   color: #172554;
 }
 
-.banner-card p {
-  margin: 12px auto 0;
-  font-size: 17px;
-  color: #475569;
-  max-width: 620px;
-}
-
-.cta-button {
-  display: inline-block;
-  margin-top: 18px;
-  padding: 14px 28px;
-  background: linear-gradient(135deg, #2563eb, #6366f1);
-  color: white;
-  font-weight: bold;
-  border-radius: 999px;
-  text-decoration: none;
-  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.28);
-  border: 2px solid rgba(255,255,255,0.2);
-  transition: all 0.2s ease;
-}
-
-.cta-button:hover {
-  transform: translateY(-2px) scale(1.03);
-}
-
-.banner-app-icons {
-  margin-top: 16px;
-}
-
-.banner-app-icons img {
-  width: 44px;
-  height: 44px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin: 0 6px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-  background: white;
+.header p {
+  margin: 14px auto 0;
+  max-width: 760px;
+  font-size: 18px;
+  color: #4b5563;
+  line-height: 1.6;
 }
 
 /* CONTENU */
 .container {
-  max-width: 1000px;
-  margin: 110px auto 0;
+  max-width: 1050px;
+  margin: 40px auto 0;
   padding: 20px;
+}
+
+.top-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.top-link:hover {
+  text-decoration: underline;
 }
 
 .section {
   background: white;
-  border-radius: 18px;
-  padding: 28px;
+  border-radius: 16px;
+  padding: 26px;
   margin-bottom: 28px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .section h2 {
   margin-top: 0;
-  margin-bottom: 14px;
   color: #172554;
-  font-size: 26px;
 }
 
 .section p {
   color: #374151;
-  margin-bottom: 12px;
+  line-height: 1.6;
 }
 
-/* LISTE */
-.values-list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0 0 14px;
-}
-
-.values-list li {
-  margin-bottom: 10px;
-  color: #374151;
-}
-
-/* APPS */
+/* GRILLE DES APPS */
 .apps-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 22px;
-  margin-top: 18px;
+  margin-top: 20px;
 }
 
 .app-card {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #e5e7eb;
-  border-radius: 18px;
-  padding: 24px 20px;
+  border-radius: 16px;
+  padding: 22px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .app-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
 }
 
 .app-icon {
-  width: 78px;
-  height: 78px;
+  width: 76px;
+  height: 76px;
   border-radius: 18px;
   object-fit: cover;
   margin-bottom: 14px;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.10);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
 }
 
 .app-card h3 {
@@ -187,16 +113,17 @@ body {
 }
 
 .app-card p {
-  min-height: 52px;
+  min-height: 60px;
   margin-bottom: 16px;
+  color: #4b5563;
 }
 
 .app-link {
   display: inline-block;
-  padding: 11px 18px;
+  padding: 10px 16px;
   background: #2563eb;
   color: white;
-  border-radius: 10px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
 }
@@ -208,7 +135,7 @@ body {
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 32px 20px;
+  padding: 30px 20px;
   color: #4b5563;
   font-size: 14px;
 }
@@ -228,33 +155,17 @@ footer a:hover {
 }
 
 /* MOBILE */
-@media (max-width: 700px) {
-  .banner {
-    max-height: 300px;
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 28px;
   }
 
-  .banner-content {
-    bottom: -70px;
+  .header p {
+    font-size: 16px;
   }
 
-  .banner-card {
-    padding: 18px 16px 16px;
-  }
-
-  .banner-card h1 {
-    font-size: 26px;
-  }
-
-  .banner-card p {
-    font-size: 15px;
-  }
-
-  .container {
-    margin-top: 130px;
-  }
-
-  .section {
-    padding: 22px;
+  .app-card p {
+    min-height: auto;
   }
 }
 </style>
@@ -262,73 +173,27 @@ footer a:hover {
 
 <body>
 
-<header>
-  <div class="banner-container">
-    <img src="banniere.jpg" class="banner" alt="Bannière Mansoa">
-    <div class="banner-overlay"></div>
-
-    <div class="banner-content">
-      <div class="banner-card">
-        <img src="mansoa.png" class="mansoa-logo" alt="Logo Mansoa">
-
-        <h1>Des applications simples, utiles et pensées pour le quotidien</h1>
-
-        <p>
-          Je développe et présente sur Mansoa des applications mobiles claires,
-          pratiques et accessibles, également publiées sur Google Play.
-        </p>
-
-        <a class="cta-button" href="applications.html">
-          🚀 Découvrir mes applications
-        </a>
-
-        <div class="banner-app-icons">
-          <img src="dealio.png" alt="Icône Dealio">
-          <img src="avantapres.png" alt="Icône Avant / Après">
-          <img src="runtrail.png" alt="Icône Run & Trail">
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+<div class="header">
+  <h1>Mes applications</h1>
+  <p>
+    Retrouvez sur cette page les applications que je développe et présente sur Mansoa,
+    avec un accès direct à leur page dédiée.
+  </p>
+</div>
 
 <div class="container">
 
-  <div class="section">
-    <h2>Bienvenue 👋</h2>
-    <p>
-      Mansoa est mon espace personnel de création et de présentation d’applications mobiles.
-    </p>
-    <p>
-      J’y partage des projets pensés pour être simples à comprendre, agréables à utiliser
-      et réellement utiles au quotidien.
-    </p>
-    <p>
-      Vous pouvez découvrir ici chaque application, son objectif, ses fonctionnalités
-      principales et son accès sur Google Play.
-    </p>
-  </div>
+  <a class="top-link" href="index.html">← Retour à l’accueil</a>
 
   <div class="section">
-    <h2>Ma façon de créer</h2>
-    <ul class="values-list">
-      <li>✔ Simplicité : des applications faciles à prendre en main</li>
-      <li>✔ Clarté : une interface intuitive et lisible</li>
-      <li>✔ Utilité : répondre à un besoin concret</li>
-    </ul>
+    <h2>Applications disponibles</h2>
     <p>
-      Mon objectif est d’aller à l’essentiel, sans complexité inutile,
-      avec une expérience fluide sur mobile.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Mes applications 📱</h2>
-    <p>
-      Retrouvez ci-dessous les projets actuellement présentés sur Mansoa.
+      Chaque application a sa propre page pour présenter son objectif,
+      ses principales fonctionnalités et son accès sur Google Play.
     </p>
 
     <div class="apps-grid">
+
       <div class="app-card">
         <img src="dealio.png" class="app-icon" alt="Icône Dealio">
         <h3>Dealio</h3>
@@ -349,6 +214,7 @@ footer a:hover {
         <p>Explorez, organisez et suivez vos courses et événements sportifs.</p>
         <a class="app-link" href="run-trail.html">Découvrir</a>
       </div>
+
     </div>
   </div>
 
