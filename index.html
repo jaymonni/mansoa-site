@@ -122,14 +122,18 @@ body {
   border-radius: 16px;
   padding: 20px;
   text-align: center;
-}
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 .app-card h3 {
   margin-bottom: 10px;
 }
-
 .app-card p {
-  min-height: 60px;
+  margin-bottom: 15px;
+}
 }
 
 .app-link {
@@ -143,6 +147,14 @@ body {
 
 .app-link:hover {
   background: #1d4ed8;
+}
+
+  .app-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  object-fit: cover;
 }
 
 /* FOOTER */
@@ -197,13 +209,15 @@ footer {
 <p>Découvrez les applications que je développe et accédez à leur présentation complète.</p>
 
     <div class="apps-grid">
-    <div class="app-card">
+   <div class="app-card">
 
   <img src="dealio.png" class="app-icon">
 
   <h3>Dealio</h3>
   <p>Recherchez rapidement sur plusieurs sites.</p>
-      </div>
+
+  <a class="app-link" href="dealio.html">Découvrir</a>
+</div>
 
       <div class="app-card">
         <h3>Avant / Après</h3>
